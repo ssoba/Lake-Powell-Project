@@ -1,19 +1,13 @@
 ---
-title: "Discussion"
-output:
-  workflowr::wflow_html:
-    toc: false
+title: "discussion"
+author: "ssoba"
+date: "2018-12-18"
+output: workflowr::wflow_html
 ---
 
-What license are you using for your code? See [choosealicense.com][choose] for
-help deciding. It's a convention to save a file `LICENSE` in the root of your
-Git repo that contains the license text.
+## Introduction
 
-What license are you using for the written content on your site? It is
-traditional to choose a [Creative Commons][cc] license for this type of content.
+```{r}
 
-[choose]: http://choosealicense.com/
-[cc]: https://creativecommons.org/choose/
+```
 
-How should others cite your work? It's a convention to save a file `CITATION`
-in the root of your Git repo that contains the citation information.

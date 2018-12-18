@@ -1,5 +1,5 @@
 ---
-title: "results"
+title: "methods"
 author: "ssoba"
 date: "2018-12-18"
 output: workflowr::wflow_html
