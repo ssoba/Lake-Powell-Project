@@ -24,7 +24,7 @@ navbar:
     - text: "References"
       href: references.html
     - icon: fa-github
-      href: https://github.com/jdblischak/workflowr
+      href: https://github.com/ssoba/lake_powell
 output:
   workflowr::wflow_html:
     toc: true
