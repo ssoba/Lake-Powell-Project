@@ -29,5 +29,22 @@ The hypolimnion temperature did not change linearly in any month of the year, bu
 ### Epilimnion Depth 
 The depth of the bottom of the epilimnion was generally becoming deeper over the study period, with February, May, July, and August boasting significant increases in epilimnion depth, and nearly significant increases (P=0.052) in June (Table 1).  The average increase in the depth of the bottom of the epilimnion is 42.4m, with the largest changes in May (average change in epilimnion depth = 120m). February was the only month where the epilimnion became slightly shallower. 
 
-![**Table 1.** Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.](Epi_depth_table.png)
+![**Table 1.** Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.](epi_depth_table.png)
 
+```{r echo = FALSE , results = 'hide'}
+Month <- c('Januaray' , 'Feburary', 'March' , 'April' , 'May' , 
+           'June' , 'July' ,' August' , 'September' , 'Ocotober' , 
+           'November' , 'December')
+Slope <- c(0.0006, -0.0027, 0.0009, 0.0013, 0.0148, 0.0098, 0.0074, 
+           0.0130, 0.0011, 0.0075, 0.0042, 0.0044)
+R_squared <- c(0.0049, 0.3008, 0.0024, 0.0033, 0.3787, 0.184, 0.2439, 
+              0.4509, 0.0047, 0.1907, 0.0535, 0.0792)
+P_value <- c(0.770, 0.012, 0.829, 0.810, 0.005, 0.052, 0.037, 0.001,
+             0.794, 0.070, 0.356, 0.183)
+epi.data <- data.frame(Month, Slope, R_squared, P_value)
+```
+
+``` {r echo = FALSE , results = 'hide'}
+library(knitr)
+kable(epi.data)
+```
