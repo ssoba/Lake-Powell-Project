@@ -8,7 +8,14 @@ navbar:
     - text: "Methods"
       href: about.html
     - text: "Results"
-      href: results.html
+      href: results_temp.html
+      menu:
+        - text: "Temperature and Stratification"
+          href: results_temp.html
+        - text: "Phytoplankton Community"
+          href: results_algae.html
+        - text: "Zooplankton Community"
+          href: results_zoop.html
     - text: "Dicussion"
       href: discussion.html
     - text: "Conclusion"

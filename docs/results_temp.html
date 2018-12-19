@@ -9,9 +9,11 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="ssoba" />
 
+<meta name="date" content="2018-12-19" />
 
-<title>Results</title>
+<title>Temperature and Stratification</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +21,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -169,6 +174,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -189,8 +289,23 @@ $(document).ready(function () {
 <li>
   <a href="about.html">Methods</a>
 </li>
-<li>
-  <a href="results.html">Results</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="results_temp.html">Temperature and Stratification</a>
+    </li>
+    <li>
+      <a href="results_algae.html">Phytoplankton Community</a>
+    </li>
+    <li>
+      <a href="results_zoop.html">Zooplankton Community</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="discussion.html">Dicussion</a>
@@ -222,7 +337,9 @@ div.section {
 
 
 
-<h1 class="title toc-ignore">Results</h1>
+<h1 class="title toc-ignore">Temperature and Stratification</h1>
+<h4 class="author"><em>ssoba</em></h4>
+<h4 class="date"><em>2018-12-19</em></h4>
 
 </div>
 
@@ -231,7 +348,7 @@ div.section {
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown is untracked by Git. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
@@ -246,7 +363,12 @@ Ignored files:
     Ignored:    docs/.DS_Store
     Ignored:    figures/.DS_Store
 
+Untracked files:
+    Untracked:  analysis/results_algae.Rmd
+    Untracked:  analysis/results_temp.Rmd
+
 Unstaged changes:
+    Modified:   analysis/_site.yml
     Modified:   analysis/about.Rmd
     Modified:   analysis/results.Rmd
 
@@ -254,193 +376,40 @@ Unstaged changes:
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
 </li>
 </ul>
-<details> <summary> <small><strong>Expand here to see past versions:</strong></small> </summary>
-<ul>
-<table style="border-collapse:separate; border-spacing:5px;">
-<thead>
-<tr>
-<th style="text-align:left;">
-File
-</th>
-<th style="text-align:left;">
-Version
-</th>
-<th style="text-align:left;">
-Author
-</th>
-<th style="text-align:left;">
-Date
-</th>
-<th style="text-align:left;">
-Message
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/ssoba/lake_powell/blob/e024d41480be205e4bf5ae41500ca2c4c754e8c4/analysis/results.Rmd" target="_blank">e024d41</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-All text content
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/e024d41480be205e4bf5ae41500ca2c4c754e8c4/docs/results.html" target="_blank">e024d41</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-All text content
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/06ef474b38f3721a7be89a425c40a6cecf03e1bd/docs/results.html" target="_blank">06ef474</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Attempt #3 to add results tab
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/ssoba/lake_powell/blob/d537266ef37686d16885a14cc93faed7bbe82fa2/analysis/results.Rmd" target="_blank">d537266</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-building docs
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/d537266ef37686d16885a14cc93faed7bbe82fa2/docs/results.html" target="_blank">d537266</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-building docs
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/ssoba/lake_powell/blob/d1bafdcd71f2b0350daa78d4970431b86c569e7a/analysis/results.Rmd" target="_blank">d1bafdc</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Trying to set up tabs try #2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/d1bafdcd71f2b0350daa78d4970431b86c569e7a/docs/results.html" target="_blank">d1bafdc</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Trying to set up tabs try #2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/249df942e013d176318db43a7b87ac848b2639d1/docs/results.html" target="_blank">249df94</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Trying to fix the files I added
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/ssoba/lake_powell/blob/44db98fa5d23ba876475ba1eba5586fd82bfe289/analysis/results.Rmd" target="_blank">44db98f</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Setting up tab names
-</td>
-</tr>
-</tbody>
-</table>
-</ul>
-<p></details></p>
 <hr />
-<div id="temperature-and-stratification-patterns" class="section level3">
-<h3>Temperature and Stratification Patterns</h3>
+<div id="surface-temperature" class="section level3">
+<h3>Surface Temperature</h3>
 <p>The mean monthly surface temperature increased by 0.664℃ over the study period (1992-2014), with significant warming in July and December (p &lt; 0.05; Fig. 2). When comparing the mean lake surface temperature from 1992 to 2014, water temperatures increased by 2.41˚C and 0.582˚C in July and December, respectively.</p>
 <div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/surfce_water_temp.png" alt="Figure 2. Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
-<p class="caption"><em>Figure 2.</em> Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
+<img src="/Users/sarasoba/Desktop/lake_powell/figures/surface_water_temp.png" alt="Figure 2. Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
+<p class="caption"><strong>Figure 2.</strong> Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
+</div>
+<hr />
+</div>
+<div id="metalimnion-temperature" class="section level3">
+<h3>Metalimnion Temperature</h3>
+<p>The mean monthly metalimnion temperature decreased by 0.149℃, with significant cooling in November (p &lt; 0.05; Fig. 3). The mean lake temperature from 1992 to 2015 for November decreased by 2.94˚C.</p>
+<div class="figure">
+<img src="/Users/sarasoba/Desktop/lake_powell/figures/Meta_temp.png" alt="Figure 3. Metalimnion average monthly temperature from 1992-2015. The metalimnion was defined as 39-41m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
+<p class="caption"><strong>Figure 3.</strong> Metalimnion average monthly temperature from 1992-2015. The metalimnion was defined as 39-41m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
+</div>
+<hr />
+</div>
+<div id="hypolimnion-temperature" class="section level3">
+<h3>Hypolimnion Temperature</h3>
+<p>The hypolimnion temperature did not change linearly in any month of the year, but all slopes were positive, resulting in warmer average temperatures in the deep waters when comparing 1992 to 2014 (Fig. 4).</p>
+<div class="figure">
+<img src="/Users/sarasoba/Desktop/lake_powell/figures/hypo_temp.png" alt="Figure 4. Hypolimnion average monthly temperature from 1992-2015. The hypolimnion was defined as 99-105m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
+<p class="caption"><strong>Figure 4.</strong> Hypolimnion average monthly temperature from 1992-2015. The hypolimnion was defined as 99-105m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
+</div>
+<hr />
+</div>
+<div id="epilimnion-depth" class="section level3">
+<h3>Epilimnion Depth</h3>
+<p>The depth of the bottom of the epilimnion was generally becoming deeper over the study period, with February, May, July, and August boasting significant increases in epilimnion depth, and nearly significant increases (P=0.052) in June (Table 1). The average increase in the depth of the bottom of the epilimnion is 42.4m, with the largest changes in May (average change in epilimnion depth = 120m). February was the only month where the epilimnion became slightly shallower.</p>
+<div class="figure">
+<img src="/Users/sarasoba/Desktop/lake_powell/figures/Epi_depth_table.png" alt="Table 1. Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted." />
+<p class="caption"><strong>Table 1.</strong> Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.</p>
 </div>
 </div>
 
@@ -465,6 +434,8 @@ footer is added to webpages before the MathJax javascript. -->
 <hr>
 
 
+</div>
+</div>
 
 </div>
 
