@@ -1,7 +1,7 @@
 name: "lake_powell"
 output_dir: "../docs"
 navbar:
-  title: "lake_powell"
+  title: "Lake Powell"
   left:
     - text: "Home"
       href: index.html
@@ -12,8 +12,6 @@ navbar:
     - text: "License"
       href: license.html
   right:
-    - text: "Hello"
-      href: index.html
     - icon: fa-github
       href: https://github.com/jdblischak/workflowr
 output:
