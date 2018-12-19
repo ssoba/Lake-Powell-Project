@@ -189,8 +189,23 @@ $(document).ready(function () {
 <li>
   <a href="about.html">Methods</a>
 </li>
-<li>
-  <a href="results.html">Results</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="results_temp.html">Temperature and Stratification</a>
+    </li>
+    <li>
+      <a href="results_algae.html">Phytoplankton Community</a>
+    </li>
+    <li>
+      <a href="results_zoop.html">Zooplankton Community</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="discussion.html">Dicussion</a>
@@ -231,11 +246,12 @@ div.section {
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>R Markdown file:</strong> up-to-date </summary></p>
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/e024d41480be205e4bf5ae41500ca2c4c754e8c4" target="_blank">e024d41</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/ca6e004515ce59b0375b64bf3f9d2d581b456ac6" target="_blank">ca6e004</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -245,10 +261,6 @@ Ignored files:
     Ignored:    analysis/.DS_Store
     Ignored:    docs/.DS_Store
     Ignored:    figures/.DS_Store
-
-Unstaged changes:
-    Modified:   analysis/about.Rmd
-    Modified:   analysis/results.Rmd
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
@@ -277,6 +289,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+Rmd
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/ssoba/lake_powell/blob/ca6e004515ce59b0375b64bf3f9d2d581b456ac6/analysis/results.Rmd" target="_blank">ca6e004</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-19
+</td>
+<td style="text-align:left;">
+Text for methods, discussion, and half of results
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/ssoba/lake_powell/ca6e004515ce59b0375b64bf3f9d2d581b456ac6/docs/results.html" target="_blank">ca6e004</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-19
+</td>
+<td style="text-align:left;">
+Text for methods, discussion, and half of results
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 Rmd
@@ -435,14 +481,6 @@ Setting up tab names
 </ul>
 <p></details></p>
 <hr />
-<div id="temperature-and-stratification-patterns" class="section level3">
-<h3>Temperature and Stratification Patterns</h3>
-<p>The mean monthly surface temperature increased by 0.664℃ over the study period (1992-2014), with significant warming in July and December (p &lt; 0.05; Fig. 2). When comparing the mean lake surface temperature from 1992 to 2014, water temperatures increased by 2.41˚C and 0.582˚C in July and December, respectively.</p>
-<div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/surfce_water_temp.png" alt="Figure 2. Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
-<p class="caption"><em>Figure 2.</em> Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
-</div>
-</div>
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
 TeX fonts only; see
