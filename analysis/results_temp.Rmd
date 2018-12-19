@@ -29,7 +29,7 @@ The hypolimnion temperature did not change linearly in any month of the year, bu
 ### Epilimnion Depth 
 The depth of the bottom of the epilimnion was generally becoming deeper over the study period, with February, May, July, and August boasting significant increases in epilimnion depth, and nearly significant increases (P=0.052) in June (Table 1).  The average increase in the depth of the bottom of the epilimnion is 42.4m, with the largest changes in May (average change in epilimnion depth = 120m). February was the only month where the epilimnion became slightly shallower. 
 
-![**Table 1.** Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.](epi_depth_table.png)
+![**Table 1.** Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.](Epi_depth_table.png)
 
 ```{r echo = FALSE , results = 'hide'}
 Month <- c('Januaray' , 'Feburary', 'March' , 'April' , 'May' , 
