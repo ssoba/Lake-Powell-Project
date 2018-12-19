@@ -289,8 +289,23 @@ div.tocify {
 <li>
   <a href="about.html">Methods</a>
 </li>
-<li>
-  <a href="results.html">Results</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="results_temp.html">Temperature and Stratification</a>
+    </li>
+    <li>
+      <a href="results_algae.html">Phytoplankton Community</a>
+    </li>
+    <li>
+      <a href="results_zoop.html">Zooplankton Community</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="discussion.html">Dicussion</a>
@@ -301,7 +316,10 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/jdblischak/workflowr">
+  <a href="references.html">References</a>
+</li>
+<li>
+  <a href="https://github.com/ssoba/lake_powell">
     <span class="fa fa-github"></span>
      
   </a>
@@ -329,15 +347,15 @@ div.section {
 </div>
 
 
-<p><strong>Last updated:</strong> 2018-12-18</p>
+<p><strong>Last updated:</strong> 2018-12-19</p>
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown is untracked by Git. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/a8a10d6f2fc60851b32746d1a5a98931f3a6fd0f" target="_blank">a8a10d6</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/4e3ff77a9de6c3504c726120ccbfef5f46d6bd7b" target="_blank">4e3ff77</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -347,25 +365,86 @@ Ignored files:
     Ignored:    analysis/.DS_Store
     Ignored:    docs/.DS_Store
 
-Untracked files:
-    Untracked:  analysis/conclusions.Rmd
-    Untracked:  analysis/discussion.Rmd
-
 Unstaged changes:
-    Modified:   analysis/_site.yml
-    Modified:   analysis/about.Rmd
-    Modified:   analysis/results.Rmd
+    Modified:   analysis/conclusions.Rmd
+    Modified:   analysis/discussion.Rmd
+    Modified:   analysis/index.Rmd
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
 </li>
 </ul>
+<details> <summary> <small><strong>Expand here to see past versions:</strong></small> </summary>
+<ul>
+<table style="border-collapse:separate; border-spacing:5px;">
+<thead>
+<tr>
+<th style="text-align:left;">
+File
+</th>
+<th style="text-align:left;">
+Version
+</th>
+<th style="text-align:left;">
+Author
+</th>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Rmd
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/ssoba/lake_powell/blob/e024d41480be205e4bf5ae41500ca2c4c754e8c4/analysis/conclusions.Rmd" target="_blank">e024d41</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-18
+</td>
+<td style="text-align:left;">
+All text content
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/ssoba/lake_powell/e024d41480be205e4bf5ae41500ca2c4c754e8c4/docs/conclusions.html" target="_blank">e024d41</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-18
+</td>
+<td style="text-align:left;">
+All text content
+</td>
+</tr>
+</tbody>
+</table>
+</ul>
+<p></details></p>
 <hr />
 <p>Although our hypothesis was refuted by the data, our body of work still carries important implications for the future of the reservoir. Analyses of zooplankton and phytoplankton community changes between 1992 and 2015 do not indicate a temporal mismatch between these two low trophic level communities. This eases concerns of those who recreate at the popular reservoir, as the fish populations should not experience negative impacts due to a decrease in food.</p>
 <p>Our analysis on the algal community yielded almost ubiquitous increases in biomass. In the future, we expect to see this cause an increase in algal blooms in the reservoir which has several potential consequences. Algal blooms are usually aesthetically displeasing to people, and considering the fact that Lake Powell is a popular vacation destination, this could easily go on to affect the economy of the surrounding region. Larger algal blooms also threaten hypoxia events and as a result, fish kills. This would be detrimental to the ecology of the lake, as well as for fishermen. Finally, cyanobacteria communities are increasing in the reservoir, therefore increasing the potential for toxic production. If future conditions of Lake Powell become prime for toxic algal blooms, there could be severe consequences for human health in the surrounding area and again, the lake ecology. It is worth noting that the pattern in population grown seen in Powell is likely not unique. Many other systems with warming waters and prolonged periods of optimal conditions for algae growth should expect to see similar trends.</p>
 <p>The ramifications of our findings for the zooplankton communities does not bode well for Lake Powell’s ecosystem either, specifically the decrease in Copepods. Fewer Copepods could lead to a change in the populations of other species in lake Powell, especially considering the fact that copepods are highly nutritious food for fish. Predators that rely on Copepods for food should be expected to decline alongside them, and a more homogenous primary consumer trophic level will lead to overall decreased biodiversity.</p>
 <p>The increases and decreases of the different subsects of the zooplankton community are the most mystifying of our findings. Because we are unsure of what is causing these trends, we think that there are mechanisms unbeknownst to us occurring in Lake Powell. Its possible that Cladocerans and Rotifers are simply outcompeting Copepods, but the nature of our analysis was designed specifically to look for a temporal mismatch, not other causes. Whatever the driving force(s) are could have other important biological and ecological effects in more than just zooplankton.</p>
 <p>Our analysis finds that although there is no temporal mismatch transpiring at Powell, there are other phenomenon to be concerned about. We highly suggest a closer look at phytoplankton communities to understand how vulnerable Powell will be to algal blooms in the future, and as mentioned, an investigation into why certain communities of zooplankton are struggling while others are thriving.</p>
+<div class="figure">
+<img src="lake_powell.png" alt="Lake Powell (from http://themaverickmagazine.com/lake-powell-arizonas-blue-water-playground/)" />
+<p class="caption">Lake Powell (from <a href="http://themaverickmagazine.com/lake-powell-arizonas-blue-water-playground/" class="uri">http://themaverickmagazine.com/lake-powell-arizonas-blue-water-playground/</a>)</p>
+</div>
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
 TeX fonts only; see
