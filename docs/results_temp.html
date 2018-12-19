@@ -316,7 +316,10 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/jdblischak/workflowr">
+  <a href="references.html">References</a>
+</li>
+<li>
+  <a href="https://github.com/ssoba/lake_powell">
     <span class="fa fa-github"></span>
      
   </a>
@@ -348,11 +351,11 @@ div.section {
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown is untracked by Git. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/e024d41480be205e4bf5ae41500ca2c4c754e8c4" target="_blank">e024d41</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/d4b31eac61d03c480d005ad13703e2c2270c4276" target="_blank">d4b31ea</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -361,27 +364,83 @@ Ignored files:
     Ignored:    .Rproj.user/
     Ignored:    analysis/.DS_Store
     Ignored:    docs/.DS_Store
-    Ignored:    figures/.DS_Store
-
-Untracked files:
-    Untracked:  analysis/results_algae.Rmd
-    Untracked:  analysis/results_temp.Rmd
 
 Unstaged changes:
-    Modified:   analysis/_site.yml
-    Modified:   analysis/about.Rmd
-    Modified:   analysis/results.Rmd
+    Modified:   analysis/results_algae.Rmd
+    Modified:   analysis/results_temp.Rmd
+    Modified:   analysis/results_zoop.Rmd
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
 </li>
 </ul>
+<details> <summary> <small><strong>Expand here to see past versions:</strong></small> </summary>
+<ul>
+<table style="border-collapse:separate; border-spacing:5px;">
+<thead>
+<tr>
+<th style="text-align:left;">
+File
+</th>
+<th style="text-align:left;">
+Version
+</th>
+<th style="text-align:left;">
+Author
+</th>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Rmd
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/ssoba/lake_powell/blob/ca6e004515ce59b0375b64bf3f9d2d581b456ac6/analysis/results_temp.Rmd" target="_blank">ca6e004</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-19
+</td>
+<td style="text-align:left;">
+Text for methods, discussion, and half of results
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/ssoba/lake_powell/ca6e004515ce59b0375b64bf3f9d2d581b456ac6/docs/results_temp.html" target="_blank">ca6e004</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-19
+</td>
+<td style="text-align:left;">
+Text for methods, discussion, and half of results
+</td>
+</tr>
+</tbody>
+</table>
+</ul>
+<p></details></p>
 <hr />
 <div id="surface-temperature" class="section level3">
 <h3>Surface Temperature</h3>
 <p>The mean monthly surface temperature increased by 0.664℃ over the study period (1992-2014), with significant warming in July and December (p &lt; 0.05; Fig. 2). When comparing the mean lake surface temperature from 1992 to 2014, water temperatures increased by 2.41˚C and 0.582˚C in July and December, respectively.</p>
 <div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/surface_water_temp.png" alt="Figure 2. Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
+<img src="surface_water_temp.png" alt="Figure 2. Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
 <p class="caption"><strong>Figure 2.</strong> Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
 </div>
 <hr />
@@ -390,7 +449,7 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in t
 <h3>Metalimnion Temperature</h3>
 <p>The mean monthly metalimnion temperature decreased by 0.149℃, with significant cooling in November (p &lt; 0.05; Fig. 3). The mean lake temperature from 1992 to 2015 for November decreased by 2.94˚C.</p>
 <div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/Meta_temp.png" alt="Figure 3. Metalimnion average monthly temperature from 1992-2015. The metalimnion was defined as 39-41m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
+<img src="Meta_temp.png" alt="Figure 3. Metalimnion average monthly temperature from 1992-2015. The metalimnion was defined as 39-41m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
 <p class="caption"><strong>Figure 3.</strong> Metalimnion average monthly temperature from 1992-2015. The metalimnion was defined as 39-41m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
 </div>
 <hr />
@@ -399,7 +458,7 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in t
 <h3>Hypolimnion Temperature</h3>
 <p>The hypolimnion temperature did not change linearly in any month of the year, but all slopes were positive, resulting in warmer average temperatures in the deep waters when comparing 1992 to 2014 (Fig. 4).</p>
 <div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/hypo_temp.png" alt="Figure 4. Hypolimnion average monthly temperature from 1992-2015. The hypolimnion was defined as 99-105m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
+<img src="hypo_temp.png" alt="Figure 4. Hypolimnion average monthly temperature from 1992-2015. The hypolimnion was defined as 99-105m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period." />
 <p class="caption"><strong>Figure 4.</strong> Hypolimnion average monthly temperature from 1992-2015. The hypolimnion was defined as 99-105m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p &lt; 0.05) change in temperature over the 23-year period.</p>
 </div>
 <hr />
@@ -408,7 +467,7 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in t
 <h3>Epilimnion Depth</h3>
 <p>The depth of the bottom of the epilimnion was generally becoming deeper over the study period, with February, May, July, and August boasting significant increases in epilimnion depth, and nearly significant increases (P=0.052) in June (Table 1). The average increase in the depth of the bottom of the epilimnion is 42.4m, with the largest changes in May (average change in epilimnion depth = 120m). February was the only month where the epilimnion became slightly shallower.</p>
 <div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/Epi_depth_table.png" alt="Table 1. Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted." />
+<img src="Epi_depth_table.png" alt="Table 1. Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted." />
 <p class="caption"><strong>Table 1.</strong> Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.</p>
 </div>
 </div>

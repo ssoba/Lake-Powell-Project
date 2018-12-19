@@ -8,26 +8,26 @@ output: workflowr::wflow_html
 ### Surface Temperature 
 The mean monthly surface temperature increased by 0.664℃ over the study period (1992-2014), with significant warming in July and December (p < 0.05; Fig. 2). When comparing the mean lake surface temperature from 1992 to 2014, water temperatures increased by 2.41˚C and 0.582˚C in July and December, respectively. 
 
-![**Figure 2.** Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p < 0.05) change in temperature over the 23-year period.](/Users/sarasoba/Desktop/lake_powell/figures/surface_water_temp.png)
+![**Figure 2.** Average surface water (Epilimnion) temperature from 1992-2015 for every month. The surface was defined as 0-1m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p < 0.05) change in temperature over the 23-year period.](surface_water_temp.png)
 
 ***
 
 ### Metalimnion Temperature 
 The mean monthly metalimnion temperature decreased by 0.149℃, with significant cooling in November (p < 0.05; Fig. 3). The mean lake temperature from 1992 to 2015 for November decreased by 2.94˚C.
 
-![**Figure 3.** Metalimnion average monthly temperature from 1992-2015. The metalimnion was defined as 39-41m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p < 0.05) change in temperature over the 23-year period.](/Users/sarasoba/Desktop/lake_powell/figures/Meta_temp.png)
+![**Figure 3.** Metalimnion average monthly temperature from 1992-2015. The metalimnion was defined as 39-41m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p < 0.05) change in temperature over the 23-year period.](Meta_temp.png)
 
 *** 
 
 ### Hypolimnion Temperature 
 The hypolimnion temperature did not change linearly in any month of the year, but all slopes were positive, resulting in warmer average temperatures in the deep waters when comparing 1992 to 2014 (Fig. 4). 
 
-![**Figure 4.** Hypolimnion average monthly temperature from 1992-2015. The hypolimnion was defined as 99-105m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p < 0.05) change in temperature over the 23-year period.](/Users/sarasoba/Desktop/lake_powell/figures/hypo_temp.png)
+![**Figure 4.** Hypolimnion average monthly temperature from 1992-2015. The hypolimnion was defined as 99-105m depth. A linear trendline and R-squared value is displayed for each month. Solid trend lines indicate a statistically significant (p < 0.05) change in temperature over the 23-year period.](hypo_temp.png)
 
 ***
 
 ### Epilimnion Depth 
 The depth of the bottom of the epilimnion was generally becoming deeper over the study period, with February, May, July, and August boasting significant increases in epilimnion depth, and nearly significant increases (P=0.052) in June (Table 1).  The average increase in the depth of the bottom of the epilimnion is 42.4m, with the largest changes in May (average change in epilimnion depth = 120m). February was the only month where the epilimnion became slightly shallower. 
 
-![**Table 1.** Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.](/Users/sarasoba/Desktop/lake_powell/figures/Epi_depth_table.png)
+![**Table 1.** Results of linear regression for epilimnion depth. The slope and R-squared value of a linear trendline are displayed for each month. A positive value for slope indicates that the epilimnion depth became deeper. The p-value from linear regression analysis is also displayed. Months in which the epilimnion depth have become significantly deeper (p ≤ 0.05) are highlighted.](Epi_depth_table.png)
 

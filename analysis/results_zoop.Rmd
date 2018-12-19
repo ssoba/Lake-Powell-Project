@@ -8,13 +8,13 @@ output: workflowr::wflow_html
 ### Summary
 Total zooplankton biomass increased during the summer months and decreased in the winter months (Fig. 7). The average increase in total zooplankton biomass from March through October 1994-2014 was 21.22 μg dry weight/L. The average decrease in January, February, November, and December was 5.77 μg dry weight/L. 
 
-![**Figure 7.** Zooplankton biomass (μg dry weight/L) for each month from 1993-2014. Each color corresponds to a different division of zooplankton. Linear trendlines are displayed for each order as well as the total biomass of zooplankton. Solid trend lines indicate significant changes in zooplankton biomass (p < 0.05).](/Users/sarasoba/Desktop/lake_powell/figures/Zoop_lin_reg.png)
+![**Figure 7.** Zooplankton biomass (μg dry weight/L) for each month from 1993-2014. Each color corresponds to a different division of zooplankton. Linear trendlines are displayed for each order as well as the total biomass of zooplankton. Solid trend lines indicate significant changes in zooplankton biomass (p < 0.05).](Zoop_lin_reg.png)
 
 ***
 
 ### Order-Specific Results
 **Rotifers** were experiencing significant population increases in January and December (Fig. 8). In 1990, there were 0 μg dry weight/L of rotifers recorded, but starting in 2003 rotifers began showing up in December and by 2014 there were 0.2 μg dry weight/L rotifers recorded. **Copepod** populations declined, especially in the early spring during February, March, and April. The greatest decrease in copepod biomass occurred in April with a decrease of 55.8 μg dry weight/L between 1992 and 2013-2014 (averaged). Copepods also decreased in October and November (Fig. 8). **Cladoceran** populations significantly (p ≤ 0.05)  increased in June with an average increase of 55.5 μg dry weight/L from 1992 to 2014 (Fig. 7). Almost all slopes for Cladoceran linear trend lines were positive, indicating general increases in Cladoceran biomass for most months of the year. The only months where Cladoceran biomass trended downward between 1992 and 2014 were August and November (Fig. 8). 
 
-![**Figure 8.** Slopes from each linear trendline of each order of zooplankton are displayed relative to each other. Red bars indicate months with statistically significant change (p < 0.05).](/Users/sarasoba/Desktop/lake_powell/figures/Zoop_slope.png)
+![**Figure 8.** Slopes from each linear trendline of each order of zooplankton are displayed relative to each other. Red bars indicate months with statistically significant change (p < 0.05).](Zoop_slope.png)
 
 

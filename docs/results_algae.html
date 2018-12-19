@@ -316,7 +316,10 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/jdblischak/workflowr">
+  <a href="references.html">References</a>
+</li>
+<li>
+  <a href="https://github.com/ssoba/lake_powell">
     <span class="fa fa-github"></span>
      
   </a>
@@ -348,12 +351,11 @@ div.section {
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>R Markdown file:</strong> up-to-date </summary></p>
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/ca6e004515ce59b0375b64bf3f9d2d581b456ac6" target="_blank">ca6e004</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/d4b31eac61d03c480d005ad13703e2c2270c4276" target="_blank">d4b31ea</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -362,7 +364,11 @@ Ignored files:
     Ignored:    .Rproj.user/
     Ignored:    analysis/.DS_Store
     Ignored:    docs/.DS_Store
-    Ignored:    figures/.DS_Store
+
+Unstaged changes:
+    Modified:   analysis/results_algae.Rmd
+    Modified:   analysis/results_temp.Rmd
+    Modified:   analysis/results_zoop.Rmd
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
@@ -391,6 +397,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/ssoba/lake_powell/015ced2eaeca828c610491f07767c72f38d718f1/docs/results_algae.html" target="_blank">015ced2</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-19
+</td>
+<td style="text-align:left;">
+Update Docs files
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 Rmd
@@ -434,7 +457,7 @@ Text for methods, discussion, and half of results
 <h3>Summary</h3>
 <p>Phytoplankton increased in biovolume, with mean total biovolume increasing by 8.50 10<sup>8</sup> μm<sup>3</sup>/L. Biovolume increased in every month for almost every type of phytoplankton (Fig. 5). The increases in biovolume were especially notable during the early spring and late winter. June had the greatest increase in total biovolume, with an increase of 3.10 𝗑 10<sup>9</sup> μm<sup>3</sup>/L in phytoplankton biovolume from 1994 to 2014 (Fig. 5).</p>
 <div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/Algae_lin_reg.png" alt="Figure 5. Phytoplankton biovolume (μm3/L) for each month from 1993-2014. Each color corresponds to a different order of phytoplankton. Linear trendlines are displayed for each order as well as the total biovolume of phytoplankton. Solid trend lines indicate significant changes in phytoplankton biovolume (p &lt; 0.05)." />
+<img src="Algae_lin_reg.png" alt="Figure 5. Phytoplankton biovolume (μm3/L) for each month from 1993-2014. Each color corresponds to a different order of phytoplankton. Linear trendlines are displayed for each order as well as the total biovolume of phytoplankton. Solid trend lines indicate significant changes in phytoplankton biovolume (p &lt; 0.05)." />
 <p class="caption"><strong>Figure 5.</strong> Phytoplankton biovolume (μm<sup>3</sup>/L) for each month from 1993-2014. Each color corresponds to a different order of phytoplankton. Linear trendlines are displayed for each order as well as the total biovolume of phytoplankton. Solid trend lines indicate significant changes in phytoplankton biovolume (p &lt; 0.05).</p>
 </div>
 <hr />
@@ -443,7 +466,7 @@ Text for methods, discussion, and half of results
 <h3>Order-Specific Changes</h3>
 <p><strong>Cyanobacteria</strong> increased in July, September, and December. These increases in Cyanobacteria suggest that they were experiencing increased blooms in the summer and winter during times they may not have been present before. From 1993 to 2014, Cyanobacteria populations increased by 1.68 𝗑 108 μm3/L in July. From 1993 to 2014, December biovolume of Cyanobacteria increased from 0 μm<sup>3</sup>/ to 1.61 𝗑 10<sup>7</sup> μm<sup>3</sup>/L (Fig. 5). Diatoms increased in early summer, with the greatest increases in June (change in Diatom volume from 1994 to 2014 = 3.02 𝗑 10<sup>9</sup> μm<sup>3</sup>L; Fig 5). <strong>Chlorophyta</strong> increased throughout the year, especially during February, the summer months, and November. Euglenophyta decreased during July but increased otherwise. <strong>Cryptophyta</strong> increased in the late winter and early spring. The significant increase (p ≤ 0.05) during January, February, and December suggest that Cryptophyta increased their temporal range. <strong>Chrysophyta</strong> and <strong>Phyrrophyta</strong> also experienced an increase in their temporal range, with significant (p ≤ 0.05) increases in February and September for Chrysophyta and increases in February, August, and September for Phyrrophyta. The total phytoplankton biovolume increased significantly (p ≤ 0.05) during almost all months of the year (Fig. 6).</p>
 <div class="figure">
-<img src="/Users/sarasoba/Desktop/lake_powell/figures/Algae_slope.png" alt="Figure 6. Slopes from each linear trendline of each order of phytoplankton are displayed relative to each other. Red bars indicate months with statistically significant change (p &lt; 0.05)" />
+<img src="Algae_slope.png" alt="Figure 6. Slopes from each linear trendline of each order of phytoplankton are displayed relative to each other. Red bars indicate months with statistically significant change (p &lt; 0.05)" />
 <p class="caption"><strong>Figure 6.</strong> Slopes from each linear trendline of each order of phytoplankton are displayed relative to each other. Red bars indicate months with statistically significant change (p &lt; 0.05)</p>
 </div>
 </div>
