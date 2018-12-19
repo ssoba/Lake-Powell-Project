@@ -4,6 +4,11 @@ output:
   workflowr::wflow_html:
     toc: false
 ---
+Click on the links below to view results of our analyses of each lake metric. 
+
+* [Temperature and Stratification](results_temp.html)
+* [Phytoplankton](results_algae.html)
+* [Zooplankton](results_zoop.html)
 
 
 

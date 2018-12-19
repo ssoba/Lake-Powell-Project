@@ -249,12 +249,11 @@ div.section {
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>R Markdown file:</strong> up-to-date </summary></p>
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/d4b31eac61d03c480d005ad13703e2c2270c4276" target="_blank">d4b31ea</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/8295943dbb614e4ced32ebd5557c91b74a1fa6fc" target="_blank">8295943</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -265,9 +264,8 @@ Ignored files:
     Ignored:    docs/.DS_Store
 
 Unstaged changes:
-    Modified:   analysis/results_algae.Rmd
-    Modified:   analysis/results_temp.Rmd
-    Modified:   analysis/results_zoop.Rmd
+    Modified:   analysis/_site.yml
+    Modified:   analysis/results.Rmd
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
@@ -296,6 +294,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/ssoba/lake_powell/8295943dbb614e4ced32ebd5557c91b74a1fa6fc/docs/results.html" target="_blank">8295943</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-19
+</td>
+<td style="text-align:left;">
+moved images to docs folder and shortened filepaths for images
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 html
@@ -505,6 +520,12 @@ Setting up tab names
 </ul>
 <p></details></p>
 <hr />
+<p>Click on the links below to view results of our analyses of each lake metric.</p>
+<ul>
+<li><a href="results_temp.html">Temperature and Stratification</a></li>
+<li><a href="results_algae.html">Phytoplankton</a></li>
+<li><a href="results_zoop.html">Zooplankton</a></li>
+</ul>
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
 TeX fonts only; see

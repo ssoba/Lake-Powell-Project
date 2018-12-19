@@ -8,7 +8,6 @@ navbar:
     - text: "Methods"
       href: about.html
     - text: "Results"
-      href: results.html
       menu:
         - text: "Temperature and Stratification"
           href: results_temp.html
