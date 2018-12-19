@@ -9,8 +9,19 @@ output:
 wd <- getwd()
 ```
 
-## Lake Powell Dataset 
+### Lake Powell Dataset 
 To investigate if a temporal mismatch has formed in Lake Powell, we determined both if climate change is impacting the reservoir and if and how algal and zooplankton communities were changing. To do so, we analyzed phytoplankton, zooplankton and temperature data collected monthly by the Lake Powell Monitoring Network from 1990 to 2015 at Wahweap Station in Lake Powell’s forebay, 2.4 channel kilometers upstream of the Glen Canyon Dam.Wahweap Station was chosen as the study site because it provided the most robust algae and plankton dataset to best determine if changes were occurring. Details about the methods of sampling are published by the United States Geological Survey (Vernieu, 2015). All data analyses were conducted in Microsoft Excel.
 
 ![Location of Wahweap Station](/Users/sarasoba/Desktop/lake_powell/figures/data_collection_site.png)
+
+###Temperature Analyses
+We analyzed if stratification of Lake Powell as well as the temperatures of the surface, metalimnion and hypolimnion waters were changing. The surface, metalimnion and hypolimnion were defined by a depth range that was consistently within that zone over the study years and provided a robust dataset. The surface, metalimnion and hypolimnion were defined as 0-1m, 39-41m and 99-105m, respectively. If there were multiple measurements on the same day in the surface, metalimnion and hypolimnion range, the temperature closest to the depth of 0m, 40m and 100m was used, respectively. We sorted each zone’s temperatures by month of the year collected. Linear regressions were conducted on each of the zones’ temperatures by month to determine if their temperature have changed significantly.
+
+To determine if stratification patterns of Lake Powell are changing, we identified the bottom of the epilimnion on each sampling date.  The depth at which the epilimnion ended was defined as the shallowest meter that experienced a change in temperature of at least -1°C. We identified the depths at which this occured between for each sampling day, and averaged the two depths for a single depth for use in our analysis. The depths of the bottom of the epilimnion were then sorted by month of the year collected. Linear regressions were conducted to determine if  the depth of the epilimnion was changing significantly.
+
+### Phytoplankton Analyses
+Due to the infrequency of sampling in 1990 and 1991, only phytoplankton data from 1992 and onward was analyzed. Phytoplankton samples taken between the depths of 0 and 1m were used to standardize the data as this range had the most robust data. The total biovolume of phytoplankton as well as for each division was calculated for each sampling day. We sorted the data by the month of the year the sample was collected. Linear regressions were conducted on the total phytoplankton and each communities’ biovolume of each month to determine if significant changes were occurring.
+
+### Zooplankton Analyses
+Analysis methods of the zooplankton communities were as uniform to the phytoplankton analyses as possible to make comparisons as accurate as possible. Because of the lack of 1990 and 1991 data, only zooplankton data from 1992 onward was analyzed. Only zooplankton tows of the depth of 0-30m were used to standardize the data as it was the most frequent tow depth and encompassed the depths of phytoplankton analyzed. The total biomass and biomass of each division of zooplankton was calculate for each sampling event. We sorted the zooplankton biomasses by the month of the year the sample was collected. Linear regressions were conducted to determine if the biomasses of zooplankton and its communities of each month were changing significantly.
 

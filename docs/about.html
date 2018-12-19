@@ -247,7 +247,7 @@ div.section {
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/a4c117620c8e963075e7f1228b05bcfcfc99adbd" target="_blank">a4c1176</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/a8a10d6f2fc60851b32746d1a5a98931f3a6fd0f" target="_blank">a8a10d6</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -257,11 +257,7 @@ Ignored files:
     Ignored:    analysis/.DS_Store
     Ignored:    docs/.DS_Store
 
-Untracked files:
-    Untracked:  figures/
-
 Unstaged changes:
-    Modified:   analysis/_site.yml
     Modified:   analysis/about.Rmd
 
 </code></pre>
@@ -291,6 +287,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+Rmd
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/ssoba/lake_powell/blob/a8a10d6f2fc60851b32746d1a5a98931f3a6fd0f/analysis/about.Rmd" target="_blank">a8a10d6</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-18
+</td>
+<td style="text-align:left;">
+Methods part 1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/ssoba/lake_powell/a8a10d6f2fc60851b32746d1a5a98931f3a6fd0f/docs/about.html" target="_blank">a8a10d6</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-18
+</td>
+<td style="text-align:left;">
+Methods part 1
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 Rmd
@@ -382,13 +412,26 @@ Start workflowr project.
 <p></details></p>
 <hr />
 <pre class="r"><code>wd &lt;- getwd()</code></pre>
-<div id="lake-powell-dataset" class="section level2">
-<h2>Lake Powell Dataset</h2>
+<div id="lake-powell-dataset" class="section level3">
+<h3>Lake Powell Dataset</h3>
 <p>To investigate if a temporal mismatch has formed in Lake Powell, we determined both if climate change is impacting the reservoir and if and how algal and zooplankton communities were changing. To do so, we analyzed phytoplankton, zooplankton and temperature data collected monthly by the Lake Powell Monitoring Network from 1990 to 2015 at Wahweap Station in Lake Powell’s forebay, 2.4 channel kilometers upstream of the Glen Canyon Dam.Wahweap Station was chosen as the study site because it provided the most robust algae and plankton dataset to best determine if changes were occurring. Details about the methods of sampling are published by the United States Geological Survey (Vernieu, 2015). All data analyses were conducted in Microsoft Excel.</p>
 <div class="figure">
 <img src="/Users/sarasoba/Desktop/lake_powell/figures/data_collection_site.png" alt="Location of Wahweap Station" />
 <p class="caption">Location of Wahweap Station</p>
 </div>
+</div>
+<div id="temperature-analyses" class="section level3">
+<h3>Temperature Analyses</h3>
+<p>We analyzed if stratification of Lake Powell as well as the temperatures of the surface, metalimnion and hypolimnion waters were changing. The surface, metalimnion and hypolimnion were defined by a depth range that was consistently within that zone over the study years and provided a robust dataset. The surface, metalimnion and hypolimnion were defined as 0-1m, 39-41m and 99-105m, respectively. If there were multiple measurements on the same day in the surface, metalimnion and hypolimnion range, the temperature closest to the depth of 0m, 40m and 100m was used, respectively. We sorted each zone’s temperatures by month of the year collected. Linear regressions were conducted on each of the zones’ temperatures by month to determine if their temperature have changed significantly.</p>
+<p>To determine if stratification patterns of Lake Powell are changing, we identified the bottom of the epilimnion on each sampling date. The depth at which the epilimnion ended was defined as the shallowest meter that experienced a change in temperature of at least -1°C. We identified the depths at which this occured between for each sampling day, and averaged the two depths for a single depth for use in our analysis. The depths of the bottom of the epilimnion were then sorted by month of the year collected. Linear regressions were conducted to determine if the depth of the epilimnion was changing significantly.</p>
+</div>
+<div id="phytoplankton-analyses" class="section level3">
+<h3>Phytoplankton Analyses</h3>
+<p>Due to the infrequency of sampling in 1990 and 1991, only phytoplankton data from 1992 and onward was analyzed. Phytoplankton samples taken between the depths of 0 and 1m were used to standardize the data as this range had the most robust data. The total biovolume of phytoplankton as well as for each division was calculated for each sampling day. We sorted the data by the month of the year the sample was collected. Linear regressions were conducted on the total phytoplankton and each communities’ biovolume of each month to determine if significant changes were occurring.</p>
+</div>
+<div id="zooplankton-analyses" class="section level3">
+<h3>Zooplankton Analyses</h3>
+<p>Analysis methods of the zooplankton communities were as uniform to the phytoplankton analyses as possible to make comparisons as accurate as possible. Because of the lack of 1990 and 1991 data, only zooplankton data from 1992 onward was analyzed. Only zooplankton tows of the depth of 0-30m were used to standardize the data as it was the most frequent tow depth and encompassed the depths of phytoplankton analyzed. The total biomass and biomass of each division of zooplankton was calculate for each sampling event. We sorted the zooplankton biomasses by the month of the year the sample was collected. Linear regressions were conducted to determine if the biomasses of zooplankton and its communities of each month were changing significantly.</p>
 </div>
 <div id="session-information" class="section level2">
 <h2>Session information</h2>

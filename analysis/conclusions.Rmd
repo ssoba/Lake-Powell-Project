@@ -1,0 +1,17 @@
+---
+title: "Conclusion"
+author: "ssoba"
+date: "2018-12-18"
+output: workflowr::wflow_html
+---
+
+Although our hypothesis was refuted by the data, our body of work still carries important implications for the future of the reservoir. Analyses of zooplankton and phytoplankton community changes between 1992 and 2015 do not indicate a temporal mismatch between these two low trophic level communities. This eases concerns of those who recreate at the popular reservoir, as the fish populations should not experience negative impacts due to a decrease in food.
+
+Our analysis on the algal community yielded almost ubiquitous increases in biomass. In the future, we expect to see this cause an increase in algal blooms in the reservoir which has several potential consequences. Algal blooms are usually aesthetically displeasing to people, and considering the fact that Lake Powell is a popular vacation destination, this could easily go on to affect the economy of the surrounding region. Larger algal blooms also threaten hypoxia events and as a result, fish kills. This would be detrimental to the ecology of the lake, as well as for fishermen. Finally, cyanobacteria communities are increasing in the reservoir, therefore increasing the potential for toxic production. If future conditions of Lake Powell become prime for toxic algal blooms, there could be severe consequences for human health in the surrounding area and again, the lake ecology. It is worth noting that the pattern in population grown seen in Powell is likely not unique. Many other systems with warming waters and prolonged periods of optimal conditions for algae growth should expect to see similar trends.
+	
+The ramifications of our findings for the zooplankton communities does not bode well for Lake Powell’s ecosystem either, specifically the decrease in Copepods. Fewer Copepods could lead to a change in the populations of other species in lake Powell, especially considering the fact that copepods are highly nutritious food for fish. Predators that rely on Copepods for food should be expected to decline alongside them, and a more homogenous primary consumer trophic level will lead to overall decreased biodiversity.
+	
+The increases and decreases of the different subsects of the zooplankton community are the most mystifying of our findings. Because we are unsure of what is causing these trends, we think that there are mechanisms unbeknownst to us occurring in Lake Powell. Its possible that Cladocerans and Rotifers are simply outcompeting Copepods, but the nature of our analysis was designed specifically to look for a temporal mismatch, not other causes. Whatever the driving force(s) are could have other important biological and ecological effects in more than just zooplankton.
+	
+Our analysis finds that although there is no temporal mismatch transpiring at Powell, there are other phenomenon to be concerned about. We highly suggest a closer look at phytoplankton communities to understand how vulnerable Powell will be to algal blooms in the future, and as mentioned, an investigation into why certain communities of zooplankton are struggling while others are thriving.
+

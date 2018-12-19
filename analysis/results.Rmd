@@ -1,8 +1,8 @@
 ---
-title: "results"
-author: "ssoba"
-date: "2018-12-18"
-output: workflowr::wflow_html
+title: "Results"
+output:
+  workflowr::wflow_html:
+    toc: false
 ---
 
 ## Introduction

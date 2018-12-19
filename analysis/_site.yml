@@ -9,8 +9,10 @@ navbar:
       href: about.html
     - text: "Results"
       href: results.html
-    - text: "License"
-      href: license.html
+    - text: "Dicussion"
+      href: discussion.html
+    - text: "Conclusion"
+      href: conclusions.html
   right:
     - icon: fa-github
       href: https://github.com/jdblischak/workflowr

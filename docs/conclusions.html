@@ -9,9 +9,11 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="ssoba" />
 
+<meta name="date" content="2018-12-18" />
 
-<title>Results</title>
+<title>Conclusion</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +21,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -169,6 +174,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -193,7 +293,10 @@ $(document).ready(function () {
   <a href="results.html">Results</a>
 </li>
 <li>
-  <a href="license.html">License</a>
+  <a href="discussion.html">Dicussion</a>
+</li>
+<li>
+  <a href="conclusions.html">Conclusion</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -219,7 +322,9 @@ div.section {
 
 
 
-<h1 class="title toc-ignore">Results</h1>
+<h1 class="title toc-ignore">Conclusion</h1>
+<h4 class="author"><em>ssoba</em></h4>
+<h4 class="date"><em>2018-12-18</em></h4>
 
 </div>
 
@@ -228,22 +333,7 @@ div.section {
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
-</details>
-</li>
-<li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Environment:</strong> empty </summary></p>
-<p>Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways. For reproduciblity it’s best to always run the code in an empty environment.</p>
-</details>
-</li>
-<li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Seed:</strong> <code>set.seed(20181115)</code> </summary></p>
-<p>The command <code>set.seed(20181115)</code> was run prior to running the code in the R Markdown file. Setting a seed ensures that any results that rely on randomness, e.g. subsampling or permutations, are reproducible.</p>
-</details>
-</li>
-<li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Session information:</strong> recorded </summary></p>
-<p>Great job! Recording the operating system, R version, and package versions is critical for reproducibility.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown is untracked by Git. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
@@ -257,7 +347,12 @@ Ignored files:
     Ignored:    analysis/.DS_Store
     Ignored:    docs/.DS_Store
 
+Untracked files:
+    Untracked:  analysis/conclusions.Rmd
+    Untracked:  analysis/discussion.Rmd
+
 Unstaged changes:
+    Modified:   analysis/_site.yml
     Modified:   analysis/about.Rmd
     Modified:   analysis/results.Rmd
 
@@ -265,182 +360,12 @@ Unstaged changes:
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
 </li>
 </ul>
-<details> <summary> <small><strong>Expand here to see past versions:</strong></small> </summary>
-<ul>
-<table style="border-collapse:separate; border-spacing:5px;">
-<thead>
-<tr>
-<th style="text-align:left;">
-File
-</th>
-<th style="text-align:left;">
-Version
-</th>
-<th style="text-align:left;">
-Author
-</th>
-<th style="text-align:left;">
-Date
-</th>
-<th style="text-align:left;">
-Message
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/06ef474b38f3721a7be89a425c40a6cecf03e1bd/docs/results.html" target="_blank">06ef474</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Attempt #3 to add results tab
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/ssoba/lake_powell/blob/d537266ef37686d16885a14cc93faed7bbe82fa2/analysis/results.Rmd" target="_blank">d537266</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-building docs
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/d537266ef37686d16885a14cc93faed7bbe82fa2/docs/results.html" target="_blank">d537266</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-building docs
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/ssoba/lake_powell/blob/d1bafdcd71f2b0350daa78d4970431b86c569e7a/analysis/results.Rmd" target="_blank">d1bafdc</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Trying to set up tabs try #2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/d1bafdcd71f2b0350daa78d4970431b86c569e7a/docs/results.html" target="_blank">d1bafdc</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Trying to set up tabs try #2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/ssoba/lake_powell/249df942e013d176318db43a7b87ac848b2639d1/docs/results.html" target="_blank">249df94</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Trying to fix the files I added
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/ssoba/lake_powell/blob/44db98fa5d23ba876475ba1eba5586fd82bfe289/analysis/results.Rmd" target="_blank">44db98f</a>
-</td>
-<td style="text-align:left;">
-ssoba
-</td>
-<td style="text-align:left;">
-2018-12-18
-</td>
-<td style="text-align:left;">
-Setting up tab names
-</td>
-</tr>
-</tbody>
-</table>
-</ul>
-<p></details></p>
 <hr />
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
-</div>
-<div id="session-information" class="section level2">
-<h2>Session information</h2>
-<pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>R version 3.5.0 (2018-04-23)
-Platform: x86_64-apple-darwin15.6.0 (64-bit)
-Running under: macOS High Sierra 10.13.6
-
-Matrix products: default
-BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
-LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
-
-locale:
-[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-
-attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
-
-loaded via a namespace (and not attached):
- [1] workflowr_1.1.1   Rcpp_0.12.17      digest_0.6.15    
- [4] rprojroot_1.3-2   R.methodsS3_1.7.1 backports_1.1.2  
- [7] git2r_0.22.1      magrittr_1.5      evaluate_0.10.1  
-[10] stringi_1.2.3     whisker_0.3-2     R.oo_1.22.0      
-[13] R.utils_2.6.0     rmarkdown_1.10    tools_3.5.0      
-[16] stringr_1.3.1     yaml_2.1.19       compiler_3.5.0   
-[19] htmltools_0.3.6   knitr_1.20       </code></pre>
-</div>
+<p>Although our hypothesis was refuted by the data, our body of work still carries important implications for the future of the reservoir. Analyses of zooplankton and phytoplankton community changes between 1992 and 2015 do not indicate a temporal mismatch between these two low trophic level communities. This eases concerns of those who recreate at the popular reservoir, as the fish populations should not experience negative impacts due to a decrease in food.</p>
+<p>Our analysis on the algal community yielded almost ubiquitous increases in biomass. In the future, we expect to see this cause an increase in algal blooms in the reservoir which has several potential consequences. Algal blooms are usually aesthetically displeasing to people, and considering the fact that Lake Powell is a popular vacation destination, this could easily go on to affect the economy of the surrounding region. Larger algal blooms also threaten hypoxia events and as a result, fish kills. This would be detrimental to the ecology of the lake, as well as for fishermen. Finally, cyanobacteria communities are increasing in the reservoir, therefore increasing the potential for toxic production. If future conditions of Lake Powell become prime for toxic algal blooms, there could be severe consequences for human health in the surrounding area and again, the lake ecology. It is worth noting that the pattern in population grown seen in Powell is likely not unique. Many other systems with warming waters and prolonged periods of optimal conditions for algae growth should expect to see similar trends.</p>
+<p>The ramifications of our findings for the zooplankton communities does not bode well for Lake Powell’s ecosystem either, specifically the decrease in Copepods. Fewer Copepods could lead to a change in the populations of other species in lake Powell, especially considering the fact that copepods are highly nutritious food for fish. Predators that rely on Copepods for food should be expected to decline alongside them, and a more homogenous primary consumer trophic level will lead to overall decreased biodiversity.</p>
+<p>The increases and decreases of the different subsects of the zooplankton community are the most mystifying of our findings. Because we are unsure of what is causing these trends, we think that there are mechanisms unbeknownst to us occurring in Lake Powell. Its possible that Cladocerans and Rotifers are simply outcompeting Copepods, but the nature of our analysis was designed specifically to look for a temporal mismatch, not other causes. Whatever the driving force(s) are could have other important biological and ecological effects in more than just zooplankton.</p>
+<p>Our analysis finds that although there is no temporal mismatch transpiring at Powell, there are other phenomenon to be concerned about. We highly suggest a closer look at phytoplankton communities to understand how vulnerable Powell will be to algal blooms in the future, and as mentioned, an investigation into why certain communities of zooplankton are struggling while others are thriving.</p>
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
 TeX fonts only; see
@@ -463,6 +388,8 @@ footer is added to webpages before the MathJax javascript. -->
 <hr>
 
 
+</div>
+</div>
 
 </div>
 
