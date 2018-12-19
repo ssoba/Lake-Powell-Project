@@ -1,8 +1,16 @@
 ---
-title: "About"
+title: "Methods"
 output:
   workflowr::wflow_html:
     toc: false
 ---
 
-Describe your project. describing the project 
+```{r, result= 'hide'}
+wd <- getwd()
+```
+
+## Lake Powell Dataset 
+To investigate if a temporal mismatch has formed in Lake Powell, we determined both if climate change is impacting the reservoir and if and how algal and zooplankton communities were changing. To do so, we analyzed phytoplankton, zooplankton and temperature data collected monthly by the Lake Powell Monitoring Network from 1990 to 2015 at Wahweap Station in Lake Powell’s forebay, 2.4 channel kilometers upstream of the Glen Canyon Dam.Wahweap Station was chosen as the study site because it provided the most robust algae and plankton dataset to best determine if changes were occurring. Details about the methods of sampling are published by the United States Geological Survey (Vernieu, 2015). All data analyses were conducted in Microsoft Excel.
+
+![Location of Wahweap Station](/Users/sarasoba/Desktop/lake_powell/figures/data_collection_site.png)
+
