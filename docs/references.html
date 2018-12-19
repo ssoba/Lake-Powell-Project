@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="ssoba" />
+
+<meta name="date" content="2018-12-19" />
+
+<title>References</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Lake Powell</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">Methods</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="results_temp.html">Temperature and Stratification</a>
+    </li>
+    <li>
+      <a href="results_algae.html">Phytoplankton Community</a>
+    </li>
+    <li>
+      <a href="results_zoop.html">Zooplankton Community</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="discussion.html">Dicussion</a>
+</li>
+<li>
+  <a href="conclusions.html">Conclusion</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="references.html">References</a>
+</li>
+<li>
+  <a href="https://github.com/jdblischak/workflowr">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<!-- Add a small amount of space between sections. -->
+<style type="text/css">
+div.section {
+  padding-top: 12px;
+}
+</style>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">References</h1>
+<h4 class="author"><em>ssoba</em></h4>
+<h4 class="date"><em>2018-12-19</em></h4>
+
+</div>
+
+
+<p><strong>Last updated:</strong> 2018-12-19</p>
+<strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
+<ul>
+<li>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown is untracked by Git. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+</details>
+</li>
+<li>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/015ced2eaeca828c610491f07767c72f38d718f1" target="_blank">015ced2</a> </summary></p>
+Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
+<pre><code>
+Ignored files:
+    Ignored:    .DS_Store
+    Ignored:    .Rhistory
+    Ignored:    .Rproj.user/
+    Ignored:    analysis/.DS_Store
+    Ignored:    docs/.DS_Store
+    Ignored:    figures/.DS_Store
+
+Untracked files:
+    Untracked:  analysis/references.Rmd
+    Untracked:  analysis/results_zoop.Rmd
+
+Unstaged changes:
+    Modified:   analysis/_site.yml
+
+</code></pre>
+Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
+</li>
+</ul>
+<hr />
+<ol style="list-style-type: decimal">
+<li>Beaver, J.R., Kirsch, J.E., Tausz, C.E., Samples, E.E., Renicher, T.R… &amp; Casamatta, D.A. 2018. Long-term trends in seasonal plankton dynamics in Lake Mead (Nevada-Arizona, USA) and implication for climate change. Hydrobiologica, 322(1), 85-109.</li>
+<li>Both, C., van Asch, M., Bijlsma, R.G., van den Burg, A.B., &amp; Visser M.E. 2009. Climate change and unequal phenological changes across four trophic levels: constraints or adaptations.</li>
+<li>Bum, B.K., &amp; Pick, F.R. 1996. Factors regulating phytoplankton and zooplankton biomass in temperature rivers. Limnology and Oceanography, 41(7): 1572-1577.</li>
+<li>Burthe, S., Daunt, F., Butler, A., Elston, D.A., Frederiksen, M., Johns, D., Newell, M., Thackeray, S.J., &amp; Wanless, S. 2012. Phenological trends and trophic mismatch across multiple levels of a North Sea pelagic food web. Marine Ecology Progress Series, 454, 119-134.</li>
+<li>Codd, G. A., Morrison, L. F., &amp; Metcalf, J. S. 2005. Cyanobacterial toxins: risk management for health protection. Toxicology and applied pharmacology, 203(3), 264-272.</li>
+<li>Colebrook, J.M. 1979. Continuous Plankton Records: Seasonal Cycles of Phytoplankton and Copepods in the North Atlantic Ocean and the North Sea. Marine Biology, 51, 23-32.</li>
+<li>Cushing, D.H. 1990. Plankton Production and Year-class Strength in Fish Populations: an Update of the Match/Mismatch Hypothesis. Advances in Marine Biology, 26, 249-293.</li>
+<li>Douglas, A.J., &amp; Harpman, D.A. 2004. Lake Powell Management Alternatives and Values: CVM Estimates of Recreation Benefits. Water International, 3, 375-383. Dupuis, A.P., &amp; Hann, B.J. 2009. Climate change, diapause termination and zooplankton population dynamics: an experimental and modelling approach. Freshwater Biology, 54(2), 221-235.</li>
+<li>Durant, J.M., Hjermann, D.O., Anker-Nilssen, T., Beaugrand, G., Mysterud, A., Pettorelli, N., &amp; Stenseth, N.C. 2005. Timing and abundance as key mechanisms affecting trophic interactions in variable environments. Ecology Letters, 8, 952-958.</li>
+<li>Durant, J.M., Hjermann, D.O., Ottersen, G., &amp; Stenseth, N.C. 2007. Climate and the match or mismatch between predator requirements and resource availability. Climate Research, 33, 271-283.</li>
+<li>Elliott, J.A. 2012. Is the future blue-green? A review of the current model predictions of how climate change could affect pelagic freshwater cyanobacteria. Water research, 46(5), 1364-1371.</li>
+<li>Fernando, C.H. Zooplankton, fish and fisheries in tropical freshwaters. Hydrobiolgica, 272, 105-123.</li>
+<li>Fortier, L., Ponton, D., &amp; Gilbert, M. 1995. The match/mismatch hypothesis and the feeding success of fish larvae in ice-covered southeastern Hudson Bay. Marine Ecology Progress Series, 120, 11-27.</li>
+<li>Grimm, N.B., Chacon, A., Dahm, C.N., Hostetler, S.W., Lind, O.T., Startweather, P.L., &amp; Wurtsbaugh, W.W. 1997. Sensitivity of Aquatic Ecosystems to Climatic and Anthropogenic Changes: The basin and Range, American Southwest and Mexico. Hydological Processes, 11, 1023-1041.</li>
+<li>Hart, R. J., &amp; Sherman, K. M. 1996. Physical and chemical characteristics of Lake Powell at the forebay and outflows of Glen Canyon Dam, northeastern Arizona, 1990-91. US Department of the Interior, US Geological Survey.</li>
+<li>Johnston, I.A., &amp; Dunn, J. 1987. Temperature acclimation and metabolism in ectotherms with particular reference to teleost fish. Symp. Socl Exp. Biol., 41, 67-93.</li>
+<li>Kerby, J.T., Wilmers, C.C., &amp; Post, E.R. 2012. Climate change, phenology, and the nature of consumer–resource interactions: advancing the match/mismatch hypothesis. Trait-mediated indirect interactions: ecological and evolutionary perspectives, Cambridge University Press, 508-525.</li>
+<li>Keogan, K., Daunt, F., Wanless, S., Phillips, R.A… &amp; Lewis, S. 2018. Global phenological insensitivity to shifting ocean temperatures among seabirds. Nature Climate Change, 8, 313-318.</li>
+<li>Lougheed, V.L., &amp; Chow-Fraser, P. Factors that regulate the zooplankton community structure of a turbid, hypereutrophic Great Lakes wetland. Canadian Journal of Fisheries and Aquatic Sciences, 55(1): 150-161.</li>
+<li>Mazumder, A., &amp; Taylor, W.D. Thermal structure of lakes varying in size and water clarity. 1994. Limnology and Oceanography, 39(4): 968-976.</li>
+<li>Mueller, G.A., &amp; Horn, M.J. Distribution and Abundance of Pelagic Fish in Lake Powell, Utah and Lake Mead, Arizona-Nevada. 2004. Western North American Naturalist, 64(3), 306-311.</li>
+<li>Nolet, B. A., Bodelier, P. L., Boers, P. C., &amp; Portielje, R. 2005. The impact of climate change on lakes in the Netherlands: a review. Aquatic Ecology, 39(4), 381-400.</li>
+<li>Olmanson, L. G., Bauer, M. E., &amp; Brezonik, P. L. 2008. A 20-year Landsat water clarity census of Minnesota’s 10,000 lakes. Remote Sensing of Environment, 112(11), 4086-4097.</li>
+<li>Perga, M. E., &amp; Gerdeaux, D. 2005. Are fish what they eat all year round? Oecologia, 144(4), 598-606.</li>
+<li>Poloczanska, E.S., Brown, C.J., Sydeman, W.J… &amp; Richardson, A.J. 2013. Global imprint of climate change on marine life. Nature Climate Change, 3, 919-925.</li>
+<li>Reynolds, C.S. 1984. The ecology of freshwater phytoplankton. Cambridge University Press, New York, New York.</li>
+<li>Robarts, R. D., &amp; Zohary, T. 1987. Temperature effects on photosynthetic capacity, respiration, and growth rates of bloom‐forming cyanobacteria. New Zealand Journal of Marine and Freshwater Research, 21(3), 391-399.</li>
+<li>Sommer, U., &amp; Sommer, F. 2006. Cladocerans versus copepods: the cause of contrasting top-down controls on freshwater and marine phytoplankton. Oecologia, 147: 183-194.</li>
+<li>Steinnes, D. N. 1992. Measuring the economic value of water quality: the case of lakeshore land. Annals of Regional Science 26: 171–176.</li>
+<li>Stross, R.G. 1966. Light and Temperature Requirements for Diapause Development and Release in Daphnia. Ecology, 3, 368.</li>
+<li>Thackeray, S. J., Sparks, T. H., Frederiksen, M., Burthe, S., Bacon, P. J., Bell, J. R., Clutton‐Brock, T. I. M. 2010. Trophic level asynchrony in rates of phenological change for marine, freshwater and terrestrial environments. Global Change Biology, 16(12), 3304-3313.</li>
+<li>Thackeray, S.J. 2012. Mismatch revisited: what is trophic mismatching from the perspective of the plankton? Journal of Plankton Research, 34(12), 1001-1010.</li>
+<li>Thackeray, S. J. et al. 2016. Phenological sensitivity to climate across taxa and trophic levels. Nature, 535, 241-245.</li>
+<li>Udall, B.U. Overpeck, J. 2017. The twenty-first century Colorado River hot drought and implications for the future. Water Resources, 53(3), 1-15.</li>
+<li>Vernieu, W.S., 2015, Biological data for water in Lake Powell and from Glen Canyon Dam releases, Utah and Arizona, 1990–2009: U.S. Geological Survey Data Series 959, 12 p., <a href="http://dx.doi.org/10.3133/ds959" class="uri">http://dx.doi.org/10.3133/ds959</a>.</li>
+<li>Visser, M.E., Both, C., Lambrechts, M.M. 2004. Global Climate Change Leads to Mistimed Avian Reproduction. Advances in Ecological Research, 35, 89-110.</li>
+<li>Winder, M., &amp; Schindler, D. E. 2004. Climate change uncouples trophic interactions in an aquatic ecosystem. Ecology, 85(8), 2100-2106.</li>
+<li>Woodward, G., Perkins, D. M., &amp; Brown, L. E. 2010. Climate change and freshwater ecosystems: impacts across multiple levels of organization. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 365(1549), 2093-2106.</li>
+</ol>
+
+<!-- Adjust MathJax settings so that all math formulae are shown using
+TeX fonts only; see
+http://docs.mathjax.org/en/latest/configuration.html.  This will make
+the presentation more consistent at the cost of the webpage sometimes
+taking slightly longer to load. Note that this only works because the
+footer is added to webpages before the MathJax javascript. -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+
+<hr>
+<p>
+  This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a>
+  analysis was created with
+  <a href="https://github.com/jdblischak/workflowr">workflowr</a> 1.1.1
+</p>
+<hr>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

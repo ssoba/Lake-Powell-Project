@@ -32,4 +32,4 @@ Zooplankton and phytoplankton population in Lake Mead, another reservoir on the 
 
 *** 
 
-Visit this [page](https://ssoba.github.io/lake_powell/) for the full list of references
+Visit this [page](references.html) for the full list of references.

@@ -8,7 +8,7 @@ navbar:
     - text: "Methods"
       href: about.html
     - text: "Results"
-      href: results_temp.html
+      href: results.html
       menu:
         - text: "Temperature and Stratification"
           href: results_temp.html
@@ -21,6 +21,8 @@ navbar:
     - text: "Conclusion"
       href: conclusions.html
   right:
+    - text: "References"
+      href: references.html
     - icon: fa-github
       href: https://github.com/jdblischak/workflowr
 output:

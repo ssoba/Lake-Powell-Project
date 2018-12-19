@@ -1,0 +1,48 @@
+---
+title: "References"
+author: "ssoba"
+date: "2018-12-19"
+output: workflowr::wflow_html
+---
+
+1. Beaver, J.R., Kirsch, J.E., Tausz, C.E., Samples, E.E., Renicher, T.R… & Casamatta, D.A.  2018.  Long-term trends in seasonal plankton dynamics in Lake Mead (Nevada-Arizona, USA) and implication for climate change.  Hydrobiologica, 322(1), 85-109.
+2. Both, C., van Asch, M., Bijlsma, R.G., van den Burg, A.B., & Visser M.E.  2009.  Climate change and unequal phenological changes across four trophic levels: constraints or adaptations. 
+3. Bum, B.K., & Pick, F.R.  1996.  Factors regulating phytoplankton and zooplankton biomass in temperature rivers.  Limnology and Oceanography, 41(7): 1572-1577.
+4. Burthe, S., Daunt, F., Butler, A., Elston, D.A., Frederiksen, M., Johns, D., Newell, M., Thackeray, S.J., & Wanless, S.  2012.  Phenological trends and trophic mismatch across multiple levels of a North Sea pelagic food web.  Marine Ecology Progress Series, 454, 119-134.
+5. Codd, G. A., Morrison, L. F., & Metcalf, J. S.  2005.  Cyanobacterial toxins: risk management for health protection.  Toxicology and applied pharmacology, 203(3), 264-272.
+6. Colebrook, J.M.  1979.  Continuous Plankton Records: Seasonal Cycles of Phytoplankton and 
+Copepods in the North Atlantic Ocean and the North Sea.  Marine Biology, 51, 23-32.
+7. Cushing, D.H.  1990.  Plankton Production and Year-class Strength in Fish Populations: an Update of the Match/Mismatch Hypothesis.  Advances in Marine Biology, 26, 249-293.
+8. Douglas, A.J., & Harpman, D.A.  2004.  Lake Powell Management Alternatives and Values: CVM Estimates of Recreation Benefits.  Water International, 3, 375-383.
+Dupuis, A.P., & Hann, B.J.  2009. Climate change, diapause termination and zooplankton population dynamics: an experimental and modelling approach.  Freshwater Biology, 54(2), 221-235.
+9. Durant, J.M., Hjermann, D.O., Anker-Nilssen, T., Beaugrand, G., Mysterud, A., Pettorelli, N., & Stenseth, N.C.  2005.  Timing and abundance as key mechanisms affecting trophic interactions in variable environments.  Ecology Letters, 8, 952-958.
+10. Durant, J.M., Hjermann, D.O., Ottersen, G., & Stenseth, N.C.  2007.  Climate and the match or mismatch between predator requirements and resource availability.  Climate Research, 33, 271-283.
+11. Elliott, J.A.  2012.  Is the future blue-green? A review of the current model predictions of how climate change could affect pelagic freshwater cyanobacteria.  Water research, 46(5), 1364-1371.
+12. Fernando, C.H.  Zooplankton, fish and fisheries in tropical freshwaters.  Hydrobiolgica, 272, 105-123.
+13. Fortier, L., Ponton, D., & Gilbert, M.  1995.  The match/mismatch hypothesis and the feeding success of fish larvae in ice-covered southeastern Hudson Bay.  Marine Ecology Progress Series,  120, 11-27.
+14. Grimm, N.B., Chacon, A., Dahm, C.N., Hostetler, S.W., Lind, O.T., Startweather, P.L., & Wurtsbaugh, W.W.  1997.  Sensitivity of Aquatic Ecosystems to Climatic and Anthropogenic Changes: The basin and Range, American Southwest and Mexico.  Hydological Processes, 11, 1023-1041.
+15. Hart, R. J., & Sherman, K. M.  1996.  Physical and chemical characteristics of Lake Powell at the forebay and outflows of Glen Canyon Dam, northeastern Arizona, 1990-91.  US Department of the Interior, US Geological Survey.
+16. Johnston, I.A., & Dunn, J.  1987.  Temperature acclimation and metabolism in ectotherms with particular reference to teleost fish.  Symp. Socl Exp. Biol., 41, 67-93.
+17. Kerby, J.T., Wilmers, C.C., & Post, E.R.  2012.  Climate change, phenology, and the nature of consumer–resource interactions: advancing the match/mismatch hypothesis.  Trait-mediated indirect interactions: ecological and evolutionary perspectives, Cambridge University Press, 508-525.
+18. Keogan, K., Daunt, F., Wanless, S., Phillips, R.A… & Lewis, S.  2018.  Global phenological insensitivity to shifting ocean temperatures among seabirds.  Nature Climate Change, 8, 313-318.
+19. Lougheed, V.L., & Chow-Fraser, P.  Factors that regulate the zooplankton community structure of a turbid, hypereutrophic Great Lakes wetland.  Canadian Journal of Fisheries and Aquatic Sciences, 55(1): 150-161.
+20. Mazumder, A., & Taylor, W.D.  Thermal structure of lakes varying in size and water clarity.  1994.  Limnology and Oceanography, 39(4): 968-976.
+21. Mueller, G.A., & Horn, M.J.  Distribution and Abundance of Pelagic Fish in Lake Powell, Utah and Lake Mead, Arizona-Nevada.  2004.  Western North American Naturalist, 64(3), 306-311.
+22. Nolet, B. A., Bodelier, P. L., Boers, P. C., & Portielje, R.  2005.  The impact of climate change on lakes in the Netherlands: a review.  Aquatic Ecology, 39(4), 381-400.
+23. Olmanson, L. G., Bauer, M. E., & Brezonik, P. L.  2008.  A 20-year Landsat water clarity census of Minnesota's 10,000 lakes.  Remote Sensing of Environment, 112(11), 4086-4097.
+24. Perga, M. E., & Gerdeaux, D.  2005. Are fish what they eat all year round? Oecologia, 144(4), 598-606.
+25. Poloczanska, E.S., Brown, C.J., Sydeman, W.J… & Richardson, A.J.  2013.  Global imprint of climate change on marine life.  Nature Climate Change, 3, 919-925.
+26. Reynolds, C.S.  1984.  The ecology of freshwater phytoplankton.  Cambridge University Press, New York, New York.
+27. Robarts, R. D., & Zohary, T.  1987.  Temperature effects on photosynthetic capacity, respiration, and growth rates of bloom‐forming cyanobacteria.  New Zealand Journal of Marine and Freshwater Research, 21(3), 391-399.
+28. Sommer, U., & Sommer, F.  2006.  Cladocerans versus copepods: the cause of contrasting top-down controls on freshwater and marine phytoplankton.  Oecologia, 147: 183-194.
+29. Steinnes, D. N.  1992.  Measuring the economic value of water quality: the case of lakeshore land.  Annals of Regional Science 26: 171–176.
+30. Stross, R.G.  1966.  Light and Temperature Requirements for Diapause Development and Release in Daphnia.  Ecology, 3, 368.
+31. Thackeray, S. J., Sparks, T. H., Frederiksen, M., Burthe, S., Bacon, P. J., Bell, J. R., Clutton‐Brock, T. I. M.  2010.  Trophic level asynchrony in rates of phenological change for marine, freshwater and terrestrial environments.  Global Change Biology, 16(12), 3304-3313.
+32. Thackeray, S.J.  2012.  Mismatch revisited: what is trophic mismatching from the perspective of the plankton?  Journal of Plankton Research, 34(12), 1001-1010.
+33. Thackeray, S. J. et al.  2016.  Phenological sensitivity to climate across taxa and trophic levels.  Nature, 535, 241-245.
+34. Udall, B.U.  Overpeck, J.  2017.  The twenty-first century Colorado River hot drought and implications for the future.  Water Resources, 53(3), 1-15.
+35. Vernieu, W.S., 2015, Biological data for water in Lake Powell and from Glen Canyon Dam releases, Utah and Arizona, 1990–2009: U.S. Geological Survey Data Series 959, 12 p., http://dx.doi.org/10.3133/ds959.
+36. Visser, M.E., Both, C., Lambrechts, M.M.  2004.  Global Climate Change Leads to Mistimed Avian Reproduction.  Advances in Ecological Research, 35, 89-110.
+37. Winder, M., & Schindler, D. E.  2004.  Climate change uncouples trophic interactions in an aquatic ecosystem.  Ecology, 85(8), 2100-2106.
+38. Woodward, G., Perkins, D. M., & Brown, L. E.  2010.  Climate change and freshwater ecosystems: impacts across multiple levels of organization.  Philosophical Transactions of the Royal Society of London B: Biological Sciences, 365(1549), 2093-2106.
+

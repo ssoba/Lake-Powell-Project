@@ -189,8 +189,23 @@ $(document).ready(function () {
 <li>
   <a href="about.html">Methods</a>
 </li>
-<li>
-  <a href="results.html">Results</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="results_temp.html">Temperature and Stratification</a>
+    </li>
+    <li>
+      <a href="results_algae.html">Phytoplankton Community</a>
+    </li>
+    <li>
+      <a href="results_zoop.html">Zooplankton Community</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="discussion.html">Dicussion</a>
@@ -201,6 +216,9 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
+  <a href="references.html">References</a>
+</li>
+<li>
   <a href="https://github.com/jdblischak/workflowr">
     <span class="fa fa-github"></span>
      
@@ -231,12 +249,11 @@ div.section {
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>R Markdown file:</strong> up-to-date </summary></p>
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/e024d41480be205e4bf5ae41500ca2c4c754e8c4" target="_blank">e024d41</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/ssoba/lake_powell/tree/015ced2eaeca828c610491f07767c72f38d718f1" target="_blank">015ced2</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -245,6 +262,15 @@ Ignored files:
     Ignored:    .Rproj.user/
     Ignored:    analysis/.DS_Store
     Ignored:    docs/.DS_Store
+    Ignored:    figures/.DS_Store
+
+Untracked files:
+    Untracked:  analysis/references.Rmd
+    Untracked:  analysis/results_zoop.Rmd
+
+Unstaged changes:
+    Modified:   analysis/_site.yml
+    Modified:   analysis/index.Rmd
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
@@ -273,6 +299,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/ssoba/lake_powell/ca6e004515ce59b0375b64bf3f9d2d581b456ac6/docs/index.html" target="_blank">ca6e004</a>
+</td>
+<td style="text-align:left;">
+ssoba
+</td>
+<td style="text-align:left;">
+2018-12-19
+</td>
+<td style="text-align:left;">
+Text for methods, discussion, and half of results
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 Rmd
@@ -382,7 +425,7 @@ Start workflowr project.
 <p>In lake communities, the primary consumer trophic level is composed of zooplankton, including rotifers, cladocerans, and copepods. Timing of the presence of cladocerans and copepods are largely regulated by other changing environmental cues, primarily the photoperiod (Stross, 1966). Copepoda and cladocera are much more nutritive food sources for higher trophic levels, indicating that they play key link in transferring energy from phytoplankton to insectivorous fish (Fernando, 1994). As the timing of algal blooms advances while blooms of cladocera and copepoda stay constant, there is the potential for a temporal mismatch between when phytoplankton and trophically important zooplankton are present that will not be remediated by evolutionary adaptations to changing phonologies of phytoplankton blooms. If algae bloom earlier in the season in lower-light conditions and then taper off before light conditions are fit for hatches of cladocera or copepoda, these two zooplankton groups will suffer due to reduced food sources in the water column. This mismatch of algal and zooplankton communities will likely impact overall ecosystem biodiversity and biomass of specific species due to bottom-up effects.</p>
 <p>Zooplankton and phytoplankton population in Lake Mead, another reservoir on the Colorado River located in the American Southwest, were observed recently but found to be stable during the monitoring period, spanning from 2007 to 2015 (Beaver et al., 2018). The populations in Mead have persisted through invasion of foreign species, increased water demand from the reservoir and environmental stresses including drought and increased temperatures, indicating population dynamics resilient to global climate change. Thus, there was no temporal mismatch between zooplankton and their main food source in this similar water body. Observing how phytoplankton and zooplankton communities in Lake Powell have responded to current stresses will offer insight into how they will respond as environmental conditions become exacerbated in the future. Insight into these relationships will also identify whether or not a temporal mismatch is occurring in this reservoir, posing a threat to higher trophic levels and potentially detracting from the cultural values of this ecosystem.</p>
 <hr />
-<p>Visit this <a href="https://ssoba.github.io/lake_powell/">page</a> for the full list of references</p>
+<p>Visit this <a href="references.html">page</a> for the full list of references.</p>
 </div>
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
